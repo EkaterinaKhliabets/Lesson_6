@@ -1,0 +1,205 @@
+$font-primery: Raleway;
+$font-secondary: Open Sans;
+$size-primary: 36px;
+$size-secondary: 14px;
+
+/*миксин, который отображает полосу*/
+@mixin band ($w, $h, $c) {
+    width: $w;
+    height: $h;
+    background-color: $c;
+    border: none;
+}
+
+/*шаблон заголовков, где шрифт и размер*/
+%style-heading {
+    font: {
+        family: $font-primery;
+        size: $size-primary;
+    }
+}
+
+%why-awesome-block-h2 {
+    margin-top: 30px;
+    font: {
+        family: $font-secondary;
+        size: 20px;
+    }
+    color: #333333;
+}
+
+%why-awesome-block-p {
+
+    margin-top: 16px;
+    font: {
+            family:$font-secondary;
+            size: $size-secondary;
+        }
+    color: #000000;
+    padding: 0 5px;
+}
+
+%circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid #E72424;
+    background: {
+        repeat: no-repeat;
+        position: center;
+    }
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+.awesome {
+    h1 {
+        padding-top: 100px;
+        @extend %style-heading;
+    }
+
+    hr {
+        margin: 25px auto 0 auto;
+        @include band (64px, 2px, #E72424);
+    }
+
+    p {
+        margin-top: 30px;
+        font: {
+            family: $font-secondary;
+            size: $size-secondary;
+        }
+        color: #86878B;
+    }
+}
+
+.why-awesome {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 67px;
+
+    .why-awesome-left-block {
+              
+        .circle-class {
+            @extend %circle;
+            margin: 0 auto;
+            background-image: url("./assets/icons/lampa.svg");
+            }
+        
+        h2 {
+            @extend %why-awesome-block-h2;
+        }
+
+        p {
+            @extend %why-awesome-block-p;
+        }
+    }
+
+    .why-awesome-center-block {
+        .circle-class {
+            @extend %circle;
+            margin: 0 auto;
+            background-image: url("./assets/icons/keyboard.svg");
+        }
+
+        h2 {
+            @extend %why-awesome-block-h2;
+        }
+
+        p {
+            @extend %why-awesome-block-p;
+        }
+    }
+
+    .why-awesome-right-block {
+        .circle-class {
+            @extend %circle;
+            margin: 0 auto;
+            background-image: url("./assets/icons/light.svg");
+        }
+
+        h2 {
+            @extend %why-awesome-block-h2;
+        }
+
+        p {
+            @extend %why-awesome-block-p;
+        }
+    }
+}
+
+.stylish-design {
+    margin-top: 108px;
+    background: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),url(./assets/icons/stylish_design.jpg);
+    background: {
+        repeat: no-repeat;
+        size: cover;
+    }
+
+    h2 {
+        padding-top: 76px;
+        @extend %style-heading;
+        color: #FFFFFF;
+    }
+
+    hr {
+        margin: 46px auto 0 auto;
+        @include band(64px,2px , #FFFFFF)
+    }
+
+    p {
+        font: {
+            family: $font-primery;
+            size: 16px;
+        }
+        margin-top: 30px;
+        color: #FFFFFF;
+        opacity: 0.8;
+    }
+
+    button {
+        height: 42px;
+        width: 135px;
+        font: {
+            family: $font-secondary;
+            size: 15px;
+        }
+        background-color: transparent; 
+        color: #FFFFFF;
+        margin-top: 30px;
+        margin-bottom: 38px;
+        border: 1px solid #FFFFFF;
+    }
+
+}
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    background-color: #000000;
+
+    .network-icons a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        padding-left: 15px;
+    }
+
+    p {
+        margin-top: 18px;
+        font: {
+            family: $font-secondary;
+            size: 12px;
+        }
+        color: #FFFFFF;
+        opacity: 0.5;
+    }
+}

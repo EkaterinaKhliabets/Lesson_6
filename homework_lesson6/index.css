@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/*миксин, который отображает полосу*/
+/*шаблон заголовков, где шрифт и размер*/
+.stylish-design h2, .awesome h1 {
+  font-family: Raleway;
+  font-size: 36px;
+}
+
+.why-awesome .why-awesome-right-block h2, .why-awesome .why-awesome-center-block h2, .why-awesome .why-awesome-left-block h2 {
+  margin-top: 30px;
+  font-family: Open Sans;
+  font-size: 20px;
+  color: #333333;
+}
+
+.why-awesome .why-awesome-right-block p, .why-awesome .why-awesome-center-block p, .why-awesome .why-awesome-left-block p {
+  margin-top: 16px;
+  font-family: Open Sans;
+  font-size: 14px;
+  color: #000000;
+  padding: 0 5px;
+}
+
+.why-awesome .why-awesome-right-block .circle-class, .why-awesome .why-awesome-center-block .circle-class, .why-awesome .why-awesome-left-block .circle-class {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid #E72424;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+.awesome h1 {
+  padding-top: 100px;
+}
+.awesome hr {
+  margin: 25px auto 0 auto;
+  width: 64px;
+  height: 2px;
+  background-color: #E72424;
+  border: none;
+}
+.awesome p {
+  margin-top: 30px;
+  font-family: Open Sans;
+  font-size: 14px;
+  color: #86878B;
+}
+
+.why-awesome {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 67px;
+}
+.why-awesome .why-awesome-left-block .circle-class {
+  margin: 0 auto;
+  background-image: url("./assets/icons/lampa.svg");
+}
+.why-awesome .why-awesome-center-block .circle-class {
+  margin: 0 auto;
+  background-image: url("./assets/icons/keyboard.svg");
+}
+.why-awesome .why-awesome-right-block .circle-class {
+  margin: 0 auto;
+  background-image: url("./assets/icons/light.svg");
+}
+.stylish-design {
+  margin-top: 108px;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./assets/icons/stylish_design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.stylish-design h2 {
+  padding-top: 76px;
+  color: #FFFFFF;
+}
+.stylish-design hr {
+  margin: 46px auto 0 auto;
+  width: 64px;
+  height: 2px;
+  background-color: #FFFFFF;
+  border: none;
+}
+.stylish-design p {
+  font-family: Raleway;
+  font-size: 16px;
+  margin-top: 30px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+.stylish-design button {
+  height: 42px;
+  width: 135px;
+  font-family: Open Sans;
+  font-size: 15px;
+  background-color: transparent;
+  color: #FFFFFF;
+  margin-top: 30px;
+  margin-bottom: 38px;
+  border: 1px solid #FFFFFF;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  background-color: #000000;
+}
+footer .network-icons a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  padding-left: 15px;
+}
+footer p {
+  margin-top: 18px;
+  font-family: Open Sans;
+  font-size: 12px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=index.css.map */
